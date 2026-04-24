@@ -13,11 +13,11 @@
   "dependencies": {
     "@next/mdx": "^15.0.0",
     "@tailwindcss/typography": "^0.5.15",
+    "gray-matter": "^4.0.3",
     "next": "^15.0.0",
-    "next-mdx-remote": "^5.0.0",
+    "next-mdx-remote": "^6.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "gray-matter": "^4.0.3",
     "reading-time": "^1.5.0",
     "resend": "^4.0.0"
   },
