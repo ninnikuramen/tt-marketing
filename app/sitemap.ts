@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { getAllPostsMeta } from '@/lib/posts';
+import { getAllPosts } from '@/lib/posts';
 
 const BASE_URL = 'https://sunbrd.com';
 
@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const posts = getAllPostsMeta();
+  const posts = getAllPosts();
   const postRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.publishedAt),
